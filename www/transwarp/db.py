@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# encoding: utf-8
+# -*- coding: utf-8 -*-
 
 __author__ = 'ovsoil'
 
@@ -146,7 +146,7 @@ class _DbCtx(threading.local):
 _db_ctx = _DbCtx()
 
 
-def create_engine(user, passwd, database, host='localhost', port='3306', **kw):
+def create_engine(user, passwd, database, host='localhost', port='8889', **kw):
     import mysql.connector
     global engine
     if engine is not None:
